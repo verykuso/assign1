@@ -7,12 +7,12 @@ int a,i,j,k,x,y,z;
 
 void setup(){
   size(640,480);
-  backgroundImg1 = loadImage("img\\bg1.png");
-  backgroundImg2 = loadImage("img\\bg2.png");
-  shipImg = loadImage("img\\fighter.png");
-  barImg = loadImage("img\\hp.png");
-  allienImg = loadImage("img\\enemy.png");
-  bonusImg = loadImage("img\\treasure.png");
+  backgroundImg1 = loadImage("img\bg1.png");
+  backgroundImg2 = loadImage("img\bg2.png");
+  shipImg = loadImage("img\fighter.png");
+  barImg = loadImage("img\hp.png");
+  allienImg = loadImage("img\enemy.png");
+  bonusImg = loadImage("img\treasure.png");
   a = floor(random(21,170)); // a is for the HP bar
   x = floor(random(50,400)); //x is for the treasure
   y = floor(random(100,350));//y is for the treasure
@@ -28,7 +28,6 @@ void draw(){
   if(j==641) j = -640; // if j reaches 641 then it becomes to -640
   image(backgroundImg1,k++,0);
   if(k==641) k = -640; //as above
-  
   
   fill(#ff0000);
   rect(24,24,a,22);//random the x-axis to show HP bar randomly
