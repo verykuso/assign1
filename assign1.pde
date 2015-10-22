@@ -29,11 +29,10 @@ void draw(){
   image(backgroundImg1,k++,0);
   if(k==641) k = -640; //as above
   
-  image(barImg,20,20);
   
   fill(#ff0000);
   rect(24,24,a,22);//random the x-axis to show HP bar randomly
-  
+  image(barImg,20,20);
   image(shipImg,580,250);//fix the ship's position
   image(bonusImg,x,y);//showing treasure randomly
   image(allienImg,i,z);//showing the enemy randomly and moving forward with 2 pixels
